@@ -1,3 +1,33 @@
 body {
   background-color: lightgoldenrodyellow;
 }
+h1 {
+  text-align: center;
+}
+
+
+
+h2 {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+
+.Homepage-tung-tung{
+  position: relative;
+  width: 100%;
+  max-width: 2000px;
+  height:700px;
+  margin: 40px auto;
+  overflow:hidden;
+}
+
+.Logo-tung-tung{
+  position: relative;
+  width: 30%;
+  max-width: 70px;
+  height: 100px;
+  margin: 40px auto;
+  overflow:hidden;
+}
