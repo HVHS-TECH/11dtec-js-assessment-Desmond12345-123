@@ -29,13 +29,10 @@ p {
 
 
 .Logo-tung-tung{
-  justify-content: left;
   margin-top : 0px;
   width: 30%;
   max-width: 70px;
   height: 100px;
-  margin: 40px auto;
-  overflow:hidden;
 }
 
 .title {
