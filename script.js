@@ -3,3 +3,10 @@ function startOrder() {
     let message = "Order started for " + CustomerName + "!";
     document.getElementById("outputMessage").innerHTML = message;
 }
+
+
+function getFormInput() {
+    const nameField = document.getElementById("nameField");
+    userName = nameField.value;
+    output.innerHTML += "<p>Hello, " + userName + "!</p>"
+}       
