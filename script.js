@@ -1,3 +1,5 @@
+const output = document.getElementById("outputMessage");
+
 function startOrder() {
     let nameInput = document.getElementById("customerName").value;
     let message = "Order started for " + CustomerName + "!";
