@@ -26,3 +26,8 @@ function goToCart() {
 function goToCheckout() {
     window.location.href = "checkout.html";
 }
+
+//Homepage function to go back to index.html
+function homepage() {
+    window.location.href = "index.html";
+}
