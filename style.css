@@ -80,8 +80,15 @@ Cart Button
 
 .cart-button:hover {
   background-color: red;
+  cursor: pointer;\
 }
 
 .checkout:hover{
+  background-color: red;
+  cursor: pointer;
+}
+
+.logo-tung-tung:hover{
+  cursor: pointer;
   background-color: red;
 }
