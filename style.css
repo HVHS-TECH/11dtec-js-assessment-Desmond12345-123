@@ -26,16 +26,16 @@ p {
 }
 
 
-.Logo-tung-tung {
-  width: 70px;
-  height: 70px;
-}
-
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px;
+}
+
+.Logo-tung-tung {
+  width: 70px;
+  height: 70px;
 }
 
 
