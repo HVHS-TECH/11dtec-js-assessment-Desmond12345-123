@@ -9,8 +9,6 @@ h1 {
   text-align: center;
 }
 
-
-
 h2 {
   text-align: center;
 }
@@ -32,6 +30,12 @@ p {
   width: 70px;
   height: 70px;
 }
+
+.header-container {
+  display: flex;
+  align-items: center
+}
+
 
 .title {
   display: flex;
