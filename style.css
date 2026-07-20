@@ -71,7 +71,7 @@ Cart Button
   border: none;
 }
 
-.cart-button   :hover {
-  background-color: skyblue;
+.cart-button:hover {
+  background-color: red;
 }
 
