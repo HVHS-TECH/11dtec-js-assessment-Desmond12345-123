@@ -45,6 +45,13 @@ p {
   padding: 16px;
 }
 
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 30px;
+}
 
 
 .title logo-tung-tung {
