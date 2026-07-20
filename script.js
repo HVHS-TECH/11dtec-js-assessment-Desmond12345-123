@@ -16,7 +16,7 @@ function openCart() {
     output.innerHTML += "<p>Cart opened!</p>";
 }
 
-
+// Function of cart button to go to cart.html
 function goToCart() {
     window.location.href = "cart.html";
 }
