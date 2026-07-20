@@ -20,3 +20,9 @@ function openCart() {
 function goToCart() {
     window.location.href = "cart.html";
 }
+
+
+//Function to go to checkout.html
+function goToCheckout() {
+    window.location.href = "checkout.html";
+}
