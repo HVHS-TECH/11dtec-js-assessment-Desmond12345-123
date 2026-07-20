@@ -14,3 +14,9 @@ function getLastname() {
     const lastName = lastNameField.value;
     output.innerHTML += "<p>Hello, " + lastName + "!</p>"
 }       
+
+
+// Function to open the cart
+function openCart() {
+    output.innerHTML += "<p>Cart opened!</p>";
+}

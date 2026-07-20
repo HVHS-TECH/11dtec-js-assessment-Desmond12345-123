@@ -52,3 +52,20 @@ p {
 }
 
 
+/*******
+Cart Button 
+*******/
+.cart-button {
+  background-color: #ffcc00
+  border: none;
+  padding: 10px 16px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cart button:hover {
+  background-color: e6b800;
+}
+
