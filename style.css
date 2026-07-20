@@ -26,7 +26,7 @@ p {
 }
 
 
-.Logo-tung-tung{
+.Logo-tung-tung {
   width: 70px;
   height: 70px;
 }
@@ -40,11 +40,9 @@ p {
 
 
 .title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-  padding: 16px 0;
+  font-family: Cosmic Sans;
+  text-align: center;
+  flex: 1;
 }
 
 .title logo-tung-tung {
