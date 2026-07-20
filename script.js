@@ -2,8 +2,8 @@ const output = document.getElementById("outputMessage");
 
 
 
-function getFormInput() {
-    const nameField = document.getElementById("nameField");
-    userName = nameField.value;
-    output.innerHTML += "<p>Hello, " + userName + "!</p>"
+function getFirstname() {
+    const firstNameField = document.getElementById("firstName");
+    const firstName = firstNameField.value;
+    output.innerHTML += "<p>Hello, " + firstName + "!</p>"
 }       
