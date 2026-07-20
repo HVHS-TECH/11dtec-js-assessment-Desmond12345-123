@@ -55,7 +55,7 @@ p {
 /*******
 Cart Button 
 *******/
-.cart-button {
+.cart-button, checkout-button {
   background-color: #ffcc00
   border: none;
   padding: 10px 16px;
