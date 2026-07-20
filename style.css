@@ -80,7 +80,7 @@ Cart Button
 
 .cart-button:hover {
   background-color: red;
-  cursor: pointer;\
+  cursor: pointer;
 }
 
 .checkout:hover{
