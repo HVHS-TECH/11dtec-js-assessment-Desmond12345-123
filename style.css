@@ -55,17 +55,18 @@ p {
 /*******
 Cart Button 
 *******/
-.cart-button, checkout-button {
-  background-color: #ffcc00
-  border: none;
+.cart-btn {
+  background-color: #ffcc00;
   padding: 10px 16px;
-  font-size: 16px;
   border-radius: 8px;
+  color: black;
+  font-size: 16px;
   cursor: pointer;
   transition: 0.2s;
+  border: none;
 }
 
-.cart button:hover {
-  background-color: e6b800;
+.cart-btn:hover {
+  background-color: #e6b800;
 }
 
