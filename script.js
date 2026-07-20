@@ -15,3 +15,8 @@ function getLastname() {
 function openCart() {
     output.innerHTML += "<p>Cart opened!</p>";
 }
+
+
+function goToCart() {
+    window.location.href = "cart.html";
+}
