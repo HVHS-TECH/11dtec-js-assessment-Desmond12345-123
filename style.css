@@ -61,7 +61,7 @@ p {
 Cart Button 
 *******/
 .cart-button {
-  background-color: #ffcc00;
+  background-color: skyblue;
   padding: 10px 16px;
   border-radius: 8px;
   color: black;
@@ -72,6 +72,6 @@ Cart Button
 }
 
 .cart-button   :hover {
-  background-color: #e6b800;
+  background-color: skyblue;
 }
 
