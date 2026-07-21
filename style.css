@@ -87,8 +87,19 @@ Div Boxes for the donut
 
 .classicGlazed{
   align-items: left;
-  
-  border-radius: 30px;
+  transform: translateX(-40px);
+  border-radius: 5px;
   background-color: lightpink;
-  padding: 60px 30px;
+  padding: 20px 10px;
+  width: 38%;
+} 
+
+
+.choclateSprinkles{
+  align-items: left;
+  transform: translateX(40px);
+  border-radius: 5px;
+  background-color: lightpink;
+  padding: 20px 10px;
+  width: 38%;
 } 
