@@ -95,9 +95,9 @@ Div Boxes for the donut
 } 
 
 
-.choclateSprinkles{
+.chocolateSprinkles{
   align-items: left;
-  transform: translateX(40px);
+  transform: translateY(40px);
   border-radius: 5px;
   background-color: lightpink;
   padding: 20px 10px;
