@@ -86,6 +86,9 @@ Div Boxes for the donut
 
 
 .classicGlazed{
-  align-items: left
+  align-items: left;
   
+  border-radius: 30px;
+  background-color: lightpink;
+  padding: 60px 30px;
 } 
