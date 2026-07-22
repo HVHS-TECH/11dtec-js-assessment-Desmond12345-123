@@ -92,9 +92,10 @@ Div Boxes for the donut
   background-color: lightpink;
   padding: 20px 10px;
   width: 38%;
+  margin-down: 30px;
 } 
 
-
+/******
 .chocolateSprinkles{
   align-items: right;
   position: relative right;
