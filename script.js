@@ -1,5 +1,9 @@
 const output = document.getElementById("outputMessage");
 
+let cart = [];
+
+
+
 // First and last name input fields1
 function getFirstname() {
     const firstNameField = document.getElementById("firstName");
@@ -32,4 +36,64 @@ function homepage() {
     window.location.href = "index.html";
 }
 
-//Order 
+//Order classic glazed
+function orderClassicGlazed() {
+    cart.push("Classic Glazed");
+}
+
+
+//Order Chocolate Sprinkles
+function orderChocolateSprinkles() {
+    cart.push("Chocolate Sprinkles");
+}
+
+//Order Strawberry Frosted
+function orderStrawberryFrosted() {
+    cart.push("Strawberry Frosted");
+}
+
+//Order Matcha Green Tea
+function orderMatchaGreenTea() {
+    cart.push("Matcha Green Tea");
+}
+
+//Order Cookies and Cream
+function orderCookiesAndCream() {
+    cart.push("Cookies and Cream");
+}
+
+//Order Lotus Biscoff
+function orderLotusBiscoff() {
+    cart.push("Lotus Biscoff");
+}
+
+//Order Salted Caramel
+function orderSaltedCaramel() {
+    cart.push("Salted Caramel");
+}
+
+//Order Pistachio
+function orderPistachio() {
+    cart.push("Pistachio");
+}
+
+//Order Blueberry Cheesecake
+function orderBlueberryCheesecake() {
+    cart.push("Blueberry Cheesecake");
+}
+
+//Order Tiramisu
+function orderTiramisu() {
+    cart.push("Tiramisu");
+}
+
+//Order Choco Hazelnut
+function orderChocoHazelnut() {
+    cart.push("Choco Hazelnut");
+}
+
+//Order Rev Velvet
+function orderRedVelvet() {
+    cart.push("Red Velvet");
+}
+
