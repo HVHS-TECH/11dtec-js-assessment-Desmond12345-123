@@ -2,6 +2,21 @@ const output = document.getElementById("outputMessage");
 
 let cart = [];
 
+let menuItems = [
+    { name: "Classic Glazed", price: 5.99 },
+    { name: "Chocolate Sprinkles", price: 6.70},
+    { name: "Strawberry Frosted", price: 6.50 },
+    { name: "Matcha Green Tea", price: 5.50 },
+    { name: "Cookies and Cream", price: 6.00 },
+    { name: "Lotus Biscoff", price: 6.25 },
+    { name: "Salted Caramel", price: 6.75 },
+    { name: "Pistachio", price: 6.25 },
+    { name: "Blueberry Cheesecake", price: 7.00 },
+    { name: "Tiramisu", price: 7.50 },
+    { name: "Choco Hazelnut", price: 7.25 },
+    { name: "Red Velvet", price: 7.75 }
+];
+
 
 
 // First and last name input fields1
@@ -38,62 +53,62 @@ function homepage() {
 
 //Order classic glazed
 function orderClassicGlazed() {
-    cart.push("Classic Glazed");
+    cart.push(menuItems[0]);
 }
 
 
 //Order Chocolate Sprinkles
 function orderChocolateSprinkles() {
-    cart.push("Chocolate Sprinkles");
+    cart.push(menuItems[1]);
 }
 
 //Order Strawberry Frosted
 function orderStrawberryFrosted() {
-    cart.push("Strawberry Frosted");
+    cart.push(menuItems[2]);
 }
 
 //Order Matcha Green Tea
 function orderMatchaGreenTea() {
-    cart.push("Matcha Green Tea");
+    cart.push(menuItems[3]);
 }
 
 //Order Cookies and Cream
 function orderCookiesAndCream() {
-    cart.push("Cookies and Cream");
+    cart.push(menuItems[4]);
 }
 
 //Order Lotus Biscoff
 function orderLotusBiscoff() {
-    cart.push("Lotus Biscoff");
+    cart.push(menuItems[5]);
 }
 
 //Order Salted Caramel
 function orderSaltedCaramel() {
-    cart.push("Salted Caramel");
+    cart.push(menuItems[6]);
 }
 
 //Order Pistachio
 function orderPistachio() {
-    cart.push("Pistachio");
+    cart.push(menuItems[7]);
 }
 
 //Order Blueberry Cheesecake
 function orderBlueberryCheesecake() {
-    cart.push("Blueberry Cheesecake");
+    cart.push(menuItems[8]);
 }
 
 //Order Tiramisu
 function orderTiramisu() {
-    cart.push("Tiramisu");
+    cart.push(menuItems[9]);
 }
 
 //Order Choco Hazelnut
 function orderChocoHazelnut() {
-    cart.push("Choco Hazelnut");
+    cart.push(menuItems[10]);
 }
 
-//Order Rev Velvet
+//Order Red Velvet
 function orderRedVelvet() {
-    cart.push("Red Velvet");
+    cart.push(menuItems[11]);
 }
 
