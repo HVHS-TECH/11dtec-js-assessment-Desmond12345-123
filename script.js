@@ -112,3 +112,22 @@ function orderRedVelvet() {
     cart.push(menuItems[11]);
 }
 
+
+//Function add item to cart
+if (addClassicGlazed) {
+    addClassicGlazed.addEventListener("click", function() {
+        orderClassicGlazed();
+        updateQuantity("quantityClassicGlazed", 1);
+    });
+elif (addChocolateSprinkles) {
+    addChocolateSprinkles.addEventListener("click", function() {
+        orderChocolateSprinkles();
+        updateQuantity("quantityChocolateSprinkles", 1);
+    });
+}
+elif (addStrawberryFrosted) {
+    addStrawberryFrosted.addEventListener("click", function() {
+        orderStrawberryFrosted();
+        updateQuantity("quantityStrawberryFrosted", 1);
+    });
+}
