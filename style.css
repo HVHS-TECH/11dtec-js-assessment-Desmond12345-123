@@ -98,6 +98,18 @@ Div Boxes for the donut
 
 
 
+.strawberryFrosted{
+  align-items: left;
+  transform: translateX(-40px);
+  border-radius: 5px;
+  background-color: lightpink;
+  padding: 80px 20px;
+  width: 38%;
+  margin-bottom: 20px;
+}
+
+
+
 /******
 .chocolateSprinkles{
   align-items: right;
