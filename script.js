@@ -131,3 +131,28 @@ elif (addStrawberryFrosted) {
         updateQuantity("quantityStrawberryFrosted", 1);
     });
 }
+elif (addMatchaGreenTea) {
+    addMatchaGreenTea.addEventListener("click", function() {
+        orderMatchaGreenTea();
+        updateQuantity("quantityMatchaGreenTea", 1);
+    });
+}
+elif (addCookiesAndCream) {
+    addCookiesAndCream.addEventListener("click", function() {
+        orderCookiesAndCream();
+        updateQuantity("quantityCookiesAndCream", 1);
+    });
+}
+elif (addLotusBiscoff) {
+    addLotusBiscoff.addEventListener("click", function() {
+        orderLotusBiscoff();
+        updateQuantity("quantityLotusBiscoff", 1);
+    });
+}
+elif (addSaltedCaramel) {
+    addSaltedCaramel.addEventListener("click", function() {
+        orderSaltedCaramel();
+        updateQuantity("quantitySaltedCaramel", 1);
+    });
+}
+elif (addPistachio)
