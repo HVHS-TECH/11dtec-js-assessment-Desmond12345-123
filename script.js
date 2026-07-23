@@ -31,3 +31,5 @@ function goToCheckout() {
 function homepage() {
     window.location.href = "index.html";
 }
+
+//Order 
