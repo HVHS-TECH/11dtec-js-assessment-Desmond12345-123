@@ -3,18 +3,18 @@ const output = document.getElementById("outputMessage");
 let cart = [];
 
 let menuItems = [
-    { name: "Classic Glazed", price: 5.99 },
-    { name: "Chocolate Sprinkles", price: 6.70},
-    { name: "Strawberry Frosted", price: 6.50 },
-    { name: "Matcha Green Tea", price: 5.50 },
-    { name: "Cookies and Cream", price: 6.00 },
-    { name: "Lotus Biscoff", price: 6.25 },
-    { name: "Salted Caramel", price: 6.75 },
-    { name: "Pistachio", price: 6.25 },
-    { name: "Blueberry Cheesecake", price: 7.00 },
-    { name: "Tiramisu", price: 7.50 },
-    { name: "Choco Hazelnut", price: 7.25 },
-    { name: "Red Velvet", price: 7.75 }
+    { name: "Classic Glazed", price: 5.99, amount: 0 },
+    { name: "Chocolate Sprinkles", price: 6.70, amount: 0 },
+    { name: "Strawberry Frosted", price: 6.50, amount: 0 },
+    { name: "Matcha Green Tea", price: 5.50, amount: 0 },
+    { name: "Cookies and Cream", price: 6.00, amount: 0 },
+    { name: "Lotus Biscoff", price: 6.25, amount: 0 },
+    { name: "Salted Caramel", price: 6.75, amount: 0 },
+    { name: "Pistachio", price: 6.25, amount: 0 },
+    { name: "Blueberry Cheesecake", price: 7.00, amount: 0 },
+    { name: "Tiramisu", price: 7.50, amount: 0 },
+    { name: "Choco Hazelnut", price: 7.25, amount: 0 },
+    { name: "Red Velvet", price: 7.75, amount: 0 }
 ];
 
 
@@ -118,47 +118,82 @@ if (addClassicGlazed) {
     addClassicGlazed.addEventListener("click", function() {
         orderClassicGlazed();
         updateQuantity("quantityClassicGlazed", 1);
+        cart[0].amount++;
     });
 elif (addChocolateSprinkles) {
     addChocolateSprinkles.addEventListener("click", function() {
         orderChocolateSprinkles();
         updateQuantity("quantityChocolateSprinkles", 1);
+        cart[1].amount++;
     });
 }
 elif (addStrawberryFrosted) {
     addStrawberryFrosted.addEventListener("click", function() {
         orderStrawberryFrosted();
         updateQuantity("quantityStrawberryFrosted", 1);
+        cart[2].amount++;
     });
 }
 elif (addMatchaGreenTea) {
     addMatchaGreenTea.addEventListener("click", function() {
         orderMatchaGreenTea();
         updateQuantity("quantityMatchaGreenTea", 1);
+        cart[3].amount++;
     });
 }
 elif (addCookiesAndCream) {
     addCookiesAndCream.addEventListener("click", function() {
         orderCookiesAndCream();
         updateQuantity("quantityCookiesAndCream", 1);
+        cart[4].amount++;
     });
 }
 elif (addLotusBiscoff) {
     addLotusBiscoff.addEventListener("click", function() {
         orderLotusBiscoff();
         updateQuantity("quantityLotusBiscoff", 1);
+        cart[5].amount++;
     });
 }
 elif (addSaltedCaramel) {
     addSaltedCaramel.addEventListener("click", function() {
         orderSaltedCaramel();
         updateQuantity("quantitySaltedCaramel", 1);
-    });(
+        cart[6].amount++;
+    });
 }
 elif (addPistachio) {
     addPistachio.addEventListener("click", function() {
         orderPistachio();
-        
         updateQuantity("quantityPistachio", 1);
+        cart[7].amount++;
+    });
+}
+elif (addBlueberryCheesecake) {
+    addBlueberryCheesecake.addEventListener("click", function() {
+        orderBlueberryCheesecake();
+        updateQuantity("quantityBlueberryCheesecake", 1);
+        cart[8].amount++;
+    });
+}
+elif (addTiramisu) {
+    addTiramisu.addEventListener("click", function() {
+        orderTiramisu();
+        updateQuantity("quantityTiramisu", 1);
+        cart[9].amount++;
+    });
+}
+elif (addChocoHazelnut) {
+    addChocoHazelnut.addEventListener("click", function() {
+        orderChocoHazelnut();
+        updateQuantity("quantityChocoHazelnut", 1);
+        cart[10].amount++;
+    });
+}
+elif (addRedVelvet) {
+    addRedVelvet.addEventListener("click", function() {
+        orderRedVelvet();
+        updateQuantity("quantityRedVelvet", 1);
+        cart[11].amount++;
     });
 }
