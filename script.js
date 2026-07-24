@@ -153,8 +153,11 @@ elif (addSaltedCaramel) {
     addSaltedCaramel.addEventListener("click", function() {
         orderSaltedCaramel();
         updateQuantity("quantitySaltedCaramel", 1);
-    });
+    });(
 }
 elif (addPistachio) {
-    addPistachio.addEventLister
+    addPistachio.addEventListener("click", function() {
+        orderPistachio();
+        updateQuantity("quantityPistachio", 1);
+    });
 }
