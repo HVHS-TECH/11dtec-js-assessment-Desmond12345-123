@@ -82,5 +82,5 @@ function loadCart() {
 
 function updateCounters() {
     cart.forEach((item, index) => {
-
+        
 }
