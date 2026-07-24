@@ -23,6 +23,22 @@
 <p id="cart-items"></p>
 <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
 
+
+<div id="cart-items"></div>
+<script>
+    const cart = JSON.parse(localStorage.getItem("cart")); \
+    let output = "";
+    for (let item in cart) {
+        if (cart[item] > 0) {
+            output += '<p>' + item + ': ' + cart[item] + '</p>';
+        }
+    }
+    document.getElementById("cart-items").innerHTML = output;
+</script>
+
+
+
+
 </header>
 </body>
 </html>
