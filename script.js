@@ -1,18 +1,18 @@
 const output = document.getElementById("outputMessage");
 
 let cart = [
-    {classicGlazed: 0},
-    {chocolateSprinkles: 0},
-    {strawberryFrosted: 0},
-    {matchaGreenTea: 0},
-    {cookiesAndCream: 0},
-    {lotusBiscoff: 0},
-    {saltedCaramel: 0},
-    {pistachio: 0},
-    {blueberryCheesecake: 0},
-    {tiramisu: 0},
-    {chocoHazelnut: 0},
-    {redVelvet: 0}
+    { key: "classicGlazed", count: 0 },
+    { key: "chocolateSprinkles", count: 0 },
+    { key: "strawberryFrosted", count: 0 },
+    { key: "matchaGreenTea", count: 0 },
+    { key: "cookiesAndCream", count: 0 },
+    { key: "lotusBiscoff", count: 0 },
+    { key: "saltedCaramel", count: 0 },
+    { key: "pistachio", count: 0 },
+    { key: "blueberryCheesecake", count: 0 },
+    { key: "tiramisu", count: 0 },
+    { key: "chocoHazelnut", count: 0 },
+    { key: "redVelvet", count: 0 }
 ];
 
 let menuItems = [
