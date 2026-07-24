@@ -69,10 +69,24 @@ function addClassicGlazed() {
     cart.push(menuItems[0]);
 }
 
+function minusClassicGlazed() {
+    const item = cart.find(i => i.name === "Classic Glazed");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
+}
+
 
 //Order Chocolate Sprinkles
 function addChocolateSprinkles() {
     cart.push(menuItems[1]);
+}
+
+function minusChocolateSprinkles() {
+    const item = cart.find(i => i.name === "Chocolate Sprinkles");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
 }
 
 //Order Strawberry Frosted
@@ -80,9 +94,23 @@ function addStrawberryFrosted() {
     cart.push(menuItems[2]);
 }
 
+function minusStrawberryFrosted() {
+    const item = cart.find(i => i.name === "Strawberry Frosted");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
+}
+
 //Order Matcha Green Tea
 function addMatchaGreenTea() {
     cart.push(menuItems[3]);
+}
+
+function minusMatchaGreenTea() {
+    const item = cart.find(i => i.name === "Matcha Green Tea");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
 }
 
 //Order Cookies and Cream
@@ -90,9 +118,23 @@ function addCookiesAndCream() {
     cart.push(menuItems[4]);
 }
 
+function minusCookiesAndCream() {
+    const item = cart.find(i => i.name === "Cookies and Cream");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
+}
+
 //Order Lotus Biscoff
 function addLotusBiscoff() {
     cart.push(menuItems[5]);
+}
+
+function minusLotusBiscoff() {
+    const item = cart.find(i => i.name === "Lotus Biscoff");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
 }
 
 //Order Salted Caramel
@@ -100,9 +142,23 @@ function addSaltedCaramel() {
     cart.push(menuItems[6]);
 }
 
+function minusSaltedCaramel() {
+    const item = cart.find(i => i.name === "Salted Caramel");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
+}
+
 //Order Pistachio
 function addPistachio() {
     cart.push(menuItems[7]);
+}
+
+function minusPistachio() {
+    const item = cart.find(i => i.name === "Pistachio");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
 }
 
 //Order Blueberry Cheesecake
@@ -110,9 +166,23 @@ function addBlueberryCheesecake() {
     cart.push(menuItems[8]);
 }
 
+function minusBlueberryCheesecake() {
+    const item = cart.find(i => i.name === "Blueberry Cheesecake");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
+}
+
 //Order Tiramisu
 function addTiramisu() {
     cart.push(menuItems[9]);
+}
+
+function minusTiramisu() {
+    const item = cart.find(i => i.name === "Tiramisu");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
 }
 
 //Order Choco Hazelnut
@@ -120,8 +190,22 @@ function addChocoHazelnut() {
     cart.push(menuItems[10]);
 }
 
+function minusChocoHazelnut() {
+    const item = cart.find(i => i.name === "Choco Hazelnut");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
+}
+
 //Order Red Velvet
 function addRedVelvet() {
     cart.push(menuItems[11]);
+}
+
+function minusRedVelvet() {
+    const item = cart.find(i => i.name === "Red Velvet");
+    if (item && item.amount > 0) {
+        item.amount--;
+    }
 }
 
