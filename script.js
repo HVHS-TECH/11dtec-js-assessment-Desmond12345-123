@@ -266,34 +266,28 @@ function printReceipt() {
     const first = document.getElementById("firstName").value;
     const last = document.getElementById("lastName").value;
     const money = Number(document.getElementById("moneyAmount").value);
-
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     let total = 0;
-    let receiptHTML = `<h2>Receipt for ${first} ${last}</h2>`;
-    receiptHTML += "<p><strong>Items:</strong></p>";
+    let printReceipt = `<h2>Receipt for ${first} ${last}</h2>`;
+
+    printReceipt += "<p>Items:</p>";
 
     cart.forEach(item => {
         if (item.count > 0) {
-            const price = priceLookup[item.key];
-            const itemTotal = item.count * price;
-
-            receiptHTML += `<p>${item.key}: ${item.count} × $${price.toFixed(2)} = $${itemTotal.toFixed(2)}</p>`;
-            total += itemTotal;
+            printReceipt += `<p>${item.key}: ${item.count}</p>`;
+            total += item.count * priceLookup[item.key];
         }
     });
 
-    receiptHTML += `<p><strong>Total Cost:</strong> $${total.toFixed(2)}</p>`;
-    receiptHTML += `<p><strong>Your Money:</strong> $${money.toFixed(2)}</p>`;
+    printReceipt += "<p><strong>Total items:</strong> " + total.toFixed(2) + "</p>";
+    printReceipt += "<p><strong>Your money:</strong> $" + money.toFixed(2) + "</p>";
 
     if (money >= total) {
-        const change = money - total;
-        receiptHTML += `<p style="color: green;"><strong>Change:</strong> $${change.toFixed(2)}</p>`;
+        printReceipt += "<p><strong>Change:</strong> $" + (money - total).toFixed(2) + "</p>";
     } else {
-        const shortage = total - money;
-        receiptHTML += `<p style="color: red;"><strong>Not enough money.</strong> You need $${shortage.toFixed(2)} more.</p>`;
+        printReceipt += "<p><strong>Insufficient funds. Please add more money.</strong></p>";
     }
 
-    document.getElementById("receipt").innerHTML = receiptHTML;
+    document.getElementById("receipt").innerHTML = printReceipt;
 }
-
