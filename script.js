@@ -265,28 +265,29 @@ function removeRedVelvet() {
 function printReceipt() {
     const first = document.getElementById("firstName").value;
     const last = document.getElementById("lastName").value;
-    const money = document.getElementById("money").value;
+    const money = Number(document.getElementById("moneyAmount").value);
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
     let total = 0;
     let printReceipt = `<h2>Receipt for ${first} ${last}</h2>`;
 
-
     printReceipt += "<p>Items:</p>";
-    cart.forEach(item =>  {
+
+    cart.forEach(item => {
         if (item.count > 0) {
             printReceipt += `<p>${item.key}: ${item.count}</p>`;
             total += item.count * priceLookup[item.key];
-
         }
     });
-    printReceipt += "<p><strong>Total items:</strong> " + total + "</p>";
-    printReceipt += "<p><strong>Your money:</strong> $" + money
-     + "</p>";
+
+    printReceipt += "<p><strong>Total items:</strong> " + total.toFixed(2) + "</p>";
+    printReceipt += "<p><strong>Your money:</strong> $" + money.toFixed(2) + "</p>";
 
     if (money >= total) {
         printReceipt += "<p><strong>Change:</strong> $" + (money - total).toFixed(2) + "</p>";
     } else {
         printReceipt += "<p><strong>Insufficient funds. Please add more money.</strong></p>";
     }
+
     document.getElementById("receipt").innerHTML = printReceipt;
 }
