@@ -80,6 +80,13 @@ Cart Button
   cursor: pointer;
   background-color: red;
 }
+.cart-button{
+  align-items: center;
+}
+.cart-button:hover{
+  background-color: red;
+  cursor:pointer;
+}
 
 /*******
 Div Boxes for the donut
