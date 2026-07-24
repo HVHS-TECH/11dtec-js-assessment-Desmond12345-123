@@ -15,9 +15,9 @@ let cart = [
     { key: "redVelvet", count: 0 }
 ];
 
-const priceLookUp = {
-    classicGlazed = 5.99,
-    chocolateSprinkles = 6.70
+const priceLookup = {
+    classicGlazed: 5.99,
+    chocolateSprinkles: 6.70,
     strawberryFrosted: 6.50,
     matchaGreenTea: 5.50,
     cookiesAndCream: 6.00,
@@ -28,7 +28,8 @@ const priceLookUp = {
     tiramisu: 7.50,
     chocoHazelnut: 7.25,
     redVelvet: 7.75
-}
+};
+
 
 // First and last name input fields1
 function getFirstname() {
