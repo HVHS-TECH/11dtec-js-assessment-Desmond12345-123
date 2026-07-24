@@ -72,4 +72,14 @@ function saveCart() {
 
 //load cart function
 function loadCart() {
-    const saved = localstorage.getItem("cart");
+    const saved = localStorage.getItem("cart");
+    if (saved) {
+        cart = JSON.parse(saved);
+    }
+}
+
+//Functgion to update the donut counter
+
+function updateCounters() {
+    
+}
