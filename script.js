@@ -72,3 +72,4 @@ function saveCart() {
 
 //load cart function
 function loadCart() {
+    const saved = localstorage.getItem("cart");
