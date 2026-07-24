@@ -89,7 +89,6 @@ function updateCounters() {
     });
 }
 
-
 function addClassicGlazed() {
     cart[0].count++;
     updateCounters();
@@ -97,7 +96,7 @@ function addClassicGlazed() {
 }
 
 function removeClassicGlazed() {
-    if (cart[0].classicGlazed > 0) {
+    if (cart[0].count > 0) {
         cart[0].count--;
         updateCounters();
         saveCart();
@@ -125,7 +124,7 @@ function addStrawberryFrosted() {
 }
 
 function removeStrawberryFrosted() {
-    if (cart[2].strawberryFrosted > 0) {
+    if (cart[2].count > 0) {
         cart[2].count--;
         updateCounters();
         saveCart();
@@ -139,7 +138,7 @@ function addMatchaGreenTea() {
 }
 
 function removeMatchaGreenTea() {
-    if (cart[3].matchaGreenTea > 0) {
+    if (cart[3].count > 0) {
         cart[3].count--;
         updateCounters();
         saveCart();
@@ -153,7 +152,7 @@ function addCookiesAndCream() {
 }
 
 function removeCookiesAndCream() {
-    if (cart[4].cookiesAndCream > 0) {
+    if (cart[4].count > 0) {
         cart[4].count--;
         updateCounters();
         saveCart();
@@ -167,7 +166,7 @@ function addLotusBiscoff() {
 }
 
 function removeLotusBiscoff() {
-    if (cart[5].lotusBiscoff > 0) {
+    if (cart[5].count > 0) {
         cart[5].count--;
         updateCounters();
         saveCart();
@@ -181,7 +180,7 @@ function addSaltedCaramel() {
 }
 
 function removeSaltedCaramel() {
-    if (cart[6].saltedCaramel > 0) {
+    if (cart[6].count > 0) {
         cart[6].count--;
         updateCounters();
         saveCart();
@@ -195,7 +194,7 @@ function addPistachio() {
 }
 
 function removePistachio() {
-    if (cart[7].pistachio > 0) {
+    if (cart[7].count > 0) {
         cart[7].count--;
         updateCounters();
         saveCart();
@@ -209,7 +208,7 @@ function addBlueberryCheesecake() {
 }
 
 function removeBlueberryCheesecake() {
-    if (cart[8].blueberryCheesecake > 0) {
+    if (cart[8].count > 0) {
         cart[8].count--;
         updateCounters();
         saveCart();
@@ -223,7 +222,7 @@ function addTiramisu() {
 }
 
 function removeTiramisu() {
-    if (cart[9].tiramisu > 0) {
+    if (cart[9].count > 0) {
         cart[9].count--;
         updateCounters();
         saveCart();
@@ -237,13 +236,12 @@ function addChocoHazelnut() {
 }
 
 function removeChocoHazelnut() {
-    if (cart[10].chocoHazelnut > 0) {
+    if (cart[10].count > 0) {
         cart[10].count--;
         updateCounters();
         saveCart();
     }
 }
-
 
 function addRedVelvet() {
     cart[11].count++;
@@ -252,7 +250,7 @@ function addRedVelvet() {
 }
 
 function removeRedVelvet() {
-    if (cart[11].redVelvet > 0) {
+    if (cart[11].count > 0) {
         cart[11].count--;
         updateCounters();
         saveCart();
