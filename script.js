@@ -15,22 +15,20 @@ let cart = [
     { key: "redVelvet", count: 0 }
 ];
 
-let menuItems = [
-    { name: "Classic Glazed", price: 5.99 },
-    { name: "Chocolate Sprinkles", price: 6.70 },
-    { name: "Strawberry Frosted", price: 6.50 },
-    { name: "Matcha Green Tea", price: 5.50 },
-    { name: "Cookies and Cream", price: 6.00 },
-    { name: "Lotus Biscoff", price: 6.25 },
-    { name: "Salted Caramel", price: 6.75 },
-    { name: "Pistachio", price: 6.25 },
-    { name: "Blueberry Cheesecake", price: 7.00 },
-    { name: "Tiramisu", price: 7.50 },
-    { name: "Choco Hazelnut", price: 7.25 },
-    { name: "Red Velvet", price: 7.75 }
-];
-
-
+const priceLookUp = {
+    classicGlazed = 5.99,
+    chocolateSprinkles = 6.70
+    strawberryFrosted: 6.50,
+    matchaGreenTea: 5.50,
+    cookiesAndCream: 6.00,
+    lotusBiscoff: 6.25,
+    saltedCaramel: 6.75,
+    pistachio: 6.25,
+    blueberryCheesecake: 7.00,
+    tiramisu: 7.50,
+    chocoHazelnut: 7.25,
+    redVelvet: 7.75
+}
 
 // First and last name input fields1
 function getFirstname() {
