@@ -74,41 +74,68 @@ h1, h2, p {
 .checkout:hover {
   background-color: red;
 }
+
 /* Donut Grid Container */
 .donut-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* space between boxes */
+  gap: 20px;
   margin-top: 40px;
 }
 
-/* Donut Box */
-.donut-box {
+/* Donut Boxes */
+.classicGlazed,
+.chocolateSprinkles,
+.strawberryFrosted,
+.matchaGreenTea,
+.cookiesAndCream,
+.lotusBiscoff,
+.saltedCaramel,
+.pistachio,
+.blueberryCheesecake,
+.tiramisu,
+.chocoHazelnut,
+.redVelvet {
   background-color: lightpink;
   border-radius: 10px;
   width: 45%; /* ensures 2 per row */
-  padding: 30px 20px;
+  padding: 25px 20px;
   text-align: center;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Donut Title */
-.donut-box h3 {
-  margin-bottom: 20px;
+/* Donut Name Text */
+.classicGlazed p,
+.chocolateSprinkles p,
+.strawberryFrosted p,
+.matchaGreenTea p,
+.cookiesAndCream p,
+.lotusBiscoff p,
+.saltedCaramel p,
+.pistachio p,
+.blueberryCheesecake p,
+.tiramisu p,
+.chocoHazelnut p,
+.redVelvet p {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-/* Counter Layout */
-.counter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-/* Plus/Minus Buttons */
-.counter button {
+/* Buttons */
+.classicGlazed button,
+.chocolateSprinkles button,
+.strawberryFrosted button,
+.matchaGreenTea button,
+.cookiesAndCream button,
+.lotusBiscoff button,
+.saltedCaramel button,
+.pistachio button,
+.blueberryCheesecake button,
+.tiramisu button,
+.chocoHazelnut button,
+.redVelvet button {
   background-color: skyblue;
   border: none;
   padding: 10px 16px;
@@ -116,15 +143,38 @@ h1, h2, p {
   cursor: pointer;
   transition: 0.2s;
   font-size: 18px;
+  margin: 0 10px;
 }
 
-.counter button:hover {
+.classicGlazed button:hover,
+.chocolateSprinkles button:hover,
+.strawberryFrosted button:hover,
+.matchaGreenTea button:hover,
+.cookiesAndCream button:hover,
+.lotusBiscoff button:hover,
+.saltedCaramel button:hover,
+.pistachio button:hover,
+.blueberryCheesecake button:hover,
+.tiramisu button:hover,
+.chocoHazelnut button:hover,
+.redVelvet button:hover {
   background-color: red;
   color: white;
 }
 
-/* Number Display */
-.counter span {
+/* Counter Numbers */
+#classicGlazedCount,
+#chocolateSprinklesCount,
+#strawberryFrostedCount,
+#matchaGreenTeaCount,
+#cookiesAndCreamCount,
+#lotusBiscoffCount,
+#saltedCaramelCount,
+#pistachioCount,
+#blueberryCheesecakeCount,
+#tiramisuCount,
+#chocoHazelnutCount,
+#redVelvetCount {
   font-size: 20px;
   font-weight: bold;
 }
