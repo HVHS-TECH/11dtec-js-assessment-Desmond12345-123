@@ -1,18 +1,18 @@
 const output = document.getElementById("outputMessage");
 
 let cart = [
-    {name: "Classic Glazed", amount: 0},
-    {name: "Chocolate Sprinkles", amount: 0},
-    {name: "Strawberry Frosted", amount: 0},
-    {name: "Matcha Green Tea", amount: 0},
-    {name: "Cookies and Cream", amount: 0},
-    {name: "Lotus Biscoff", amount: 0},
-    {name: "Salted Caramel", amount: 0},
-    {name: "Pistachio", amount: 0},
-    {name: "Blueberry Cheesecake", amount: 0},
-    {name: "Tiramisu", amount: 0},
-    {name: "Choco Hazelnut", amount: 0},
-    {name: "Red Velvet", amount: 0}
+    {classicGlazed: 0},
+    {chocolateSprinkles: 0},
+    {strawberryFrosted: 0},
+    {matchaGreenTea: 0},
+    {cookiesAndCream: 0},
+    {lotusBiscoff: 0},
+    {saltedCaramel: 0},
+    {pistachio: 0},
+    {blueberryCheesecake: 0},
+    {tiramisu: 0},
+    {chocoHazelnut: 0},
+    {redVelvet: 0}
 ];
 
 let menuItems = [
@@ -77,10 +77,184 @@ function loadCart() {
         cart = JSON.parse(saved);
     }
 }
+loadCart();
 
 //Functgion to update the donut counter
 
 function updateCounters() {
-    cart.forEach((item, index) => {
-        
+    for(let item in cart) {
+        const element = document.getElementById(item + "Count");
+        if (element) {
+            element.textContent = cart[item];
+        }
+    }
+}
+
+function addClassicGlazed() {
+    cart[0].classicGlazed++;
+    updateCounters();
+    saveCart();
+}
+
+function removeClassicGlazed() {
+    if (cart[0].classicGlazed > 0) {
+        cart[0].classicGlazed--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addChocolateSprinkles() {
+    cart[1].chocolateSprinkles++;
+    updateCounters();
+    saveCart();
+}
+
+function removeChocolateSprinkles() {
+    if (cart[1].chocolateSprinkles > 0) {
+        cart[1].chocolateSprinkles--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addStrawberryFrosted() {
+    cart[2].strawberryFrosted++;
+    updateCounters();
+    saveCart();
+}
+
+function removeStrawberryFrosted() {
+    if (cart[2].strawberryFrosted > 0) {
+        cart[2].strawberryFrosted--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addMatchaGreenTea() {
+    cart[3].matchaGreenTea++;
+    updateCounters();
+    saveCart();
+}
+
+function removeMatchaGreenTea() {
+    if (cart[3].matchaGreenTea > 0) {
+        cart[3].matchaGreenTea--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addCookiesAndCream() {
+    cart[4].cookiesAndCream++;
+    updateCounters();
+    saveCart();
+}
+
+function removeCookiesAndCream() {
+    if (cart[4].cookiesAndCream > 0) {
+        cart[4].cookiesAndCream--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addLotusBiscoff() {
+    cart[5].lotusBiscoff++;
+    updateCounters();
+    saveCart();
+}
+
+function removeLotusBiscoff() {
+    if (cart[5].lotusBiscoff > 0) {
+        cart[5].lotusBiscoff--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addSaltedCaramel() {
+    cart[6].saltedCaramel++;
+    updateCounters();
+    saveCart();
+}
+
+function removeSaltedCaramel() {
+    if (cart[6].saltedCaramel > 0) {
+        cart[6].saltedCaramel--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addPistachio() {
+    cart[7].pistachio++;
+    updateCounters();
+    saveCart();
+}
+
+function removePistachio() {
+    if (cart[7].pistachio > 0) {
+        cart[7].pistachio--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addBlueberryCheesecake() {
+    cart[8].blueberryCheesecake++;
+    updateCounters();
+    saveCart();
+}
+
+function removeBlueberryCheesecake() {
+    if (cart[8].blueberryCheesecake > 0) {
+        cart[8].blueberryCheesecake--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addTiramisu() {
+    cart[9].tiramisu++;
+    updateCounters();
+    saveCart();
+}
+
+function removeTiramisu() {
+    if (cart[9].tiramisu > 0) {
+        cart[9].tiramisu--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+function addChocoHazelnut() {
+    cart[10].chocoHazelnut++;
+    updateCounters();
+    saveCart();
+}
+
+function removeChocoHazelnut() {
+    if (cart[10].chocoHazelnut > 0) {
+        cart[10].chocoHazelnut--;
+        updateCounters();
+        saveCart();
+    }
+}
+
+
+function addRedVelvet() {
+    cart[11].redVelvet++;
+    updateCounters();
+    saveCart();
+}
+
+function removeRedVelvet() {
+    if (cart[11].redVelvet > 0) {
+        cart[11].redVelvet--;
+        updateCounters();
+        saveCart();
+    }
 }
