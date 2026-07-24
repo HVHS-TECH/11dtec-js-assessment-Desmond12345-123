@@ -81,25 +81,25 @@ loadCart();
 
 //Functgion to update the donut counter
 function updateCounters() {
-    for (let i = 0; i < cart.length; i++) {
-        const id = cart[i].key + "Count";
+    cart.forEach(item => {
+        const id = item.key + "Count";
         const element = document.getElementById(id);
         if (element) {
-            element.textContent = cart[i].count;
+            element.textContent = item.count;
         }
-    }
+    });
 }
 
 
 function addClassicGlazed() {
-    cart[0].classicGlazed++;
+    cart[0].count++;
     updateCounters();
     saveCart();
 }
 
 function removeClassicGlazed() {
     if (cart[0].classicGlazed > 0) {
-        cart[0].classicGlazed--;
+        cart[0].count--;
         updateCounters();
         saveCart();
     }
@@ -113,133 +113,133 @@ function addChocolateSprinkles() {
 
 function removeChocolateSprinkles() {
     if (cart[1].chocolateSprinkles > 0) {
-        cart[1].chocolateSprinkles--;
+        cart[1].count--;
         updateCounters();
         saveCart();
     }
 }
 
 function addStrawberryFrosted() {
-    cart[2].strawberryFrosted++;
+    cart[2].count++;
     updateCounters();
     saveCart();
 }
 
 function removeStrawberryFrosted() {
     if (cart[2].strawberryFrosted > 0) {
-        cart[2].strawberryFrosted--;
+        cart[2].count--;
         updateCounters();
         saveCart();
     }
 }
 
 function addMatchaGreenTea() {
-    cart[3].matchaGreenTea++;
+    cart[3].count++;
     updateCounters();
     saveCart();
 }
 
 function removeMatchaGreenTea() {
     if (cart[3].matchaGreenTea > 0) {
-        cart[3].matchaGreenTea--;
+        cart[3].count--;
         updateCounters();
         saveCart();
     }
 }
 
 function addCookiesAndCream() {
-    cart[4].cookiesAndCream++;
+    cart[4].count++;
     updateCounters();
     saveCart();
 }
 
 function removeCookiesAndCream() {
     if (cart[4].cookiesAndCream > 0) {
-        cart[4].cookiesAndCream--;
+        cart[4].count--;
         updateCounters();
         saveCart();
     }
 }
 
 function addLotusBiscoff() {
-    cart[5].lotusBiscoff++;
+    cart[5].count++;
     updateCounters();
     saveCart();
 }
 
 function removeLotusBiscoff() {
     if (cart[5].lotusBiscoff > 0) {
-        cart[5].lotusBiscoff--;
+        cart[5].count--;
         updateCounters();
         saveCart();
     }
 }
 
 function addSaltedCaramel() {
-    cart[6].saltedCaramel++;
+    cart[6].count++;
     updateCounters();
     saveCart();
 }
 
 function removeSaltedCaramel() {
     if (cart[6].saltedCaramel > 0) {
-        cart[6].saltedCaramel--;
+        cart[6].count--;
         updateCounters();
         saveCart();
     }
 }
 
 function addPistachio() {
-    cart[7].pistachio++;
+    cart[7].count++;
     updateCounters();
     saveCart();
 }
 
 function removePistachio() {
     if (cart[7].pistachio > 0) {
-        cart[7].pistachio--;
+        cart[7].count--;
         updateCounters();
         saveCart();
     }
 }
 
 function addBlueberryCheesecake() {
-    cart[8].blueberryCheesecake++;
+    cart[8].count++;
     updateCounters();
     saveCart();
 }
 
 function removeBlueberryCheesecake() {
     if (cart[8].blueberryCheesecake > 0) {
-        cart[8].blueberryCheesecake--;
+        cart[8].count--;
         updateCounters();
         saveCart();
     }
 }
 
 function addTiramisu() {
-    cart[9].tiramisu++;
+    cart[9].count++;
     updateCounters();
     saveCart();
 }
 
 function removeTiramisu() {
     if (cart[9].tiramisu > 0) {
-        cart[9].tiramisu--;
+        cart[9].count--;
         updateCounters();
         saveCart();
     }
 }
 
 function addChocoHazelnut() {
-    cart[10].chocoHazelnut++;
+    cart[10].count++;
     updateCounters();
     saveCart();
 }
 
 function removeChocoHazelnut() {
     if (cart[10].chocoHazelnut > 0) {
-        cart[10].chocoHazelnut--;
+        cart[10].count--;
         updateCounters();
         saveCart();
     }
@@ -247,14 +247,14 @@ function removeChocoHazelnut() {
 
 
 function addRedVelvet() {
-    cart[11].redVelvet++;
+    cart[11].count++;
     updateCounters();
     saveCart();
 }
 
 function removeRedVelvet() {
     if (cart[11].redVelvet > 0) {
-        cart[11].redVelvet--;
+        cart[11].count--;
         updateCounters();
         saveCart();
     }
