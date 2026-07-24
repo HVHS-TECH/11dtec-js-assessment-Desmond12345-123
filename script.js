@@ -289,3 +289,20 @@ function printReceipt() {
 
     document.getElementById("receipt").innerHTML = printReceipt;
 }
+
+
+
+
+
+
+
+
+
+//function for validator/boundarys
+
+function validateName(name) {
+    return /^[A-Za-z]+$/.test(name);
+}
+
+
+

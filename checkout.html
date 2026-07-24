@@ -43,7 +43,7 @@
 
 <form onsubmit="return false;">
     <label for="money">Enter how much money you have:</label>
-    <input type = "text" id="moneyAmount" name="formName" value="$XYZ">
+    <input type="number" id="moneyAmount" min="0" max="1000000000000" step="0.01">
     <input type = "submit" onClick="getMoney()">
 </form>
 
