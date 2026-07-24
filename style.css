@@ -1,63 +1,51 @@
-*{
-  padding:0;
-  margin:0; 
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
 }
+
 body {
   background-color: lightgoldenrodyellow;
 }
-h1 {
+
+/* Typography */
+h1, h2, p {
   text-align: center;
 }
-h2 {
-  text-align: center;
-}
-p {
-  text-align: center;
-}
-.Homepage-tung-tung{
+
+/* Homepage Image */
+.Homepage-tung-tung {
   position: relative;
   width: 100%;
   max-width: 2000px;
-  height:700px;
+  height: 700px;
   margin: 40px auto;
-  overflow:hidden;
+  overflow: hidden;
 }
+
+/* Logo */
 .Logo-tung-tung {
   width: 70px;
   height: 70px;
+  cursor: pointer;
 }
 
-.title {
-  font-family: Cosmic Sans;
-  text-align: center;
-  flex: 1;
-
-}
+/* Header Layout */
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px;
 }
-.checkout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-  margin-right: 30px;
-}
-.title logo-tung-tung {
-  justify-content: left;
-  align-items: left;
-}
-.title h1 {
-  margin: 0;
+
+/* Title */
+.title {
+  font-family: Cosmic Sans;
+  flex: 1;
+  text-align: center;
 }
 
-
-/*******
-Cart Button 
-*******/
+/* Cart Button */
 .cart-button {
   background-color: skyblue;
   padding: 10px 16px;
@@ -65,64 +53,41 @@ Cart Button
   color: black;
   font-size: 16px;
   cursor: pointer;
-  transition: 0.2s;
   border: none;
+  transition: background-color 0.2s;
 }
+
 .cart-button:hover {
   background-color: red;
-  cursor: pointer;
 }
-.checkout:hover{
-  background-color: red;
-  cursor: pointer;
-}
-.logo-tung-tung:hover{
-  cursor: pointer;
-  background-color: red;
-}
-.cart-button{
+
+/* Checkout Box */
+.checkout {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  margin-right: 30px;
+  transition: background-color 0.2s;
 }
-.cart-button:hover{
+
+.checkout:hover {
   background-color: red;
-  cursor:pointer;
 }
 
-/*******
-Div Boxes for the donut
-*******/
-
-
-.classicGlazed{
-  align-items: left;
+/* Donut Boxes (Unified Style) */
+.donut-box {
+  border-radius: 5px;
+  background-color: lightpink;
+  padding: 40px 20px;
+  width: 38%;
+  margin: 20px auto;
   transform: translateX(-40px);
-  border-radius: 5px;
-  background-color: lightpink;
-  padding: 80px 20px;
-  width: 38%;
-  margin-bottom: 20px;
 }
 
-
-
-.strawberryFrosted{
-  align-items: left;
-  transform: translateX(-40px);
-  border-radius: 5px;
-  background-color: lightpink;
-  padding: 80px 20px;
-  width: 38%;
-  margin-bottom: 20px;
+/* Specific Donut Classes (optional if you want unique styling later) */
+.classicGlazed,
+.strawberryFrosted,
+.chocolateSprinkles {
+  composes: donut-box;
 }
-
-
-
-/******
-.chocolateSprinkles{
-  align-items: right;
-  position: relative right;
-  border-radius: 5px;
-  background-color: lightpink;
-  padding: 20px 10px;
-  width: 38%;
-} 
