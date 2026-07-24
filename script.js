@@ -267,13 +267,15 @@ function printReceipt() {
     const money = document.getElementById("money").value;
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     let total = 0;
-    let printReceipt = "<h2>Receipt for ${first} ${last}</h2>";
+    let printReceipt = `<h2>Receipt for ${first} ${last}</h2>`;
+
 
     printReceipt += "<p>Items:</p>";
     cart.forEach(item =>  {
         if (item.count > 0) {
-            printReceipt += "<p> ${item.key}: ${item.count}</p>";
-            total += item.count * menuItems.find(menuItem => menuItem.key === item.key).price;
+            printReceipt += `<p>${item.key}: ${item.count}</p>`;
+            total += item.count * priceLookup[item.key];
+
         }
     });
     printReceipt += "<p><strong>Total items:</strong> " + total + "</p>";
