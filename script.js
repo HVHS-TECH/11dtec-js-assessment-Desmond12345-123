@@ -209,3 +209,15 @@ function minusRedVelvet() {
     }
 }
 
+
+
+
+//To add length of cart
+
+for (let i = 0; i < cart.length; i++) {
+    const item = cart[i];
+    const itemElement = document.getElementById(item.name);
+    if (itemElement) {
+        itemElement.innerHTML = item.amount;
+    }
+}
