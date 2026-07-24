@@ -261,4 +261,10 @@ function removeRedVelvet() {
 }
 
 
-\
+//functino for recipet
+
+function printReceipt() {
+    const first = document.getElementById("firstName").value;
+    const last = document.getElementById("lastName").value;
+    const money = document.getElementById("money").value;
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
