@@ -80,15 +80,16 @@ function loadCart() {
 loadCart();
 
 //Functgion to update the donut counter
-
 function updateCounters() {
-    for(let item in cart) {
-        const element = document.getElementById(item + "Count");
+    for (let i = 0; i < cart.length; i++) {
+        const id = cart[i].key + "Count";
+        const element = document.getElementById(id);
         if (element) {
-            element.textContent = cart[item];
+            element.textContent = cart[i].count;
         }
     }
 }
+
 
 function addClassicGlazed() {
     cart[0].classicGlazed++;
