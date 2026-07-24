@@ -266,15 +266,15 @@ function removeRedVelvet() {
 function printReceipt() {
     const first = document.getElementById("firstName").value;
     const last = document.getElementById("lastName").value;
-    const money = document.getElementById("money").value;
+    const money = document.getElementById("moneyAmount").value;
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
     let total = 0;
-    let printReceipt = "<h2>Receipt for {first} {last}</h2>";
+    let printReceipt = "<h2>Receipt for ${first} ${last}</h2>";
 
     printReceipt += "<p>Items:</p>";
     cart.forEach(item =>  {
         if (item.count > 0) {
-            printReceipt += "<p> {item.key}: {item.count}</p>";
+            printReceipt += "<p> ${item.key}: ${item.count}</p>";
             total += item.count * menuItems.find(menuItem => menuItem.key === item.key).price;
         }
     });
