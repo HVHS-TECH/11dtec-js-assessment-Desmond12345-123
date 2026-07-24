@@ -81,5 +81,6 @@ function loadCart() {
 //Functgion to update the donut counter
 
 function updateCounters() {
-    
+    cart.forEach((item, index) => {
+
 }
