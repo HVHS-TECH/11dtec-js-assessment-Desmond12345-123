@@ -65,38 +65,38 @@ function homepage() {
 }
 
 //Order classic glazed
-function orderClassicGlazed() {
+function addClassicGlazed() {
     cart.push(menuItems[0]);
 }
 
 
 //Order Chocolate Sprinkles
-function orderChocolateSprinkles() {
+function addChocolateSprinkles() {
     cart.push(menuItems[1]);
 }
 
 //Order Strawberry Frosted
-function orderStrawberryFrosted() {
+function addStrawberryFrosted() {
     cart.push(menuItems[2]);
 }
 
 //Order Matcha Green Tea
-function orderMatchaGreenTea() {
+function addMatchaGreenTea() {
     cart.push(menuItems[3]);
 }
 
 //Order Cookies and Cream
-function orderCookiesAndCream() {
+function addCookiesAndCream() {
     cart.push(menuItems[4]);
 }
 
 //Order Lotus Biscoff
-function orderLotusBiscoff() {
+function addLotusBiscoff() {
     cart.push(menuItems[5]);
 }
 
 //Order Salted Caramel
-function orderSaltedCaramel() {
+function addSaltedCaramel() {
     cart.push(menuItems[6]);
 }
 
