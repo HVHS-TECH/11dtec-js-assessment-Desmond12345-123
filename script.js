@@ -155,4 +155,6 @@ elif (addSaltedCaramel) {
         updateQuantity("quantitySaltedCaramel", 1);
     });
 }
-elif (addPistachio)
+elif (addPistachio) {
+    addPistachio.addEventLister
+}
