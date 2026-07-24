@@ -63,3 +63,12 @@ function goToCheckout() {
 function homepage() {
     window.location.href = "index.html";
 }
+
+
+//save cart funciton 
+function saveCart() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+//load cart function
+function loadCart() {
