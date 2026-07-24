@@ -26,16 +26,19 @@
 
 <div id="cart-items"></div>
 <script>
-    const cart = JSON.parse(localStorage.getItem("cart")); \
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
     let output = "";
-    for (let item in cart) {
-        if (cart[item] > 0) {
-            output += '<p>' + item + ': ' + cart[item] + '</p>';
+
+    cart.forEach(item => {
+        if (item.count > 0) {
+            output += `<p>${item.key}: ${item.count}</p>`;
         }
-    }
+    });
+
     document.getElementById("cart-items").innerHTML = output;
 </script>
 
+</div>
 
 
 
