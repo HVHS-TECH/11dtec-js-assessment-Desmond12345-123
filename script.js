@@ -304,5 +304,24 @@ function validateName(name) {
     return /^[A-Za-z]+$/.test(name);
 }
 
+function getFirstname() {
+    const firstName = document.getElementById("firstName").value;
 
+    if (!validateName(firstName)) {
+        output.innerHTML += "<p>Invalid first name. Letters only.</p>";
+        return;
+    }
 
+    output.innerHTML += "<p>Hello, " + firstName + "!</p>";
+}
+
+function getLastname() {
+    const lastName = document.getElementById("lastName").value;
+
+    if (!validateName(lastName)) {
+        output.innerHTML += "<p>Invalid last name. Letters only.</p>";
+        return;
+    }
+
+    output.innerHTML += "<p>Hello, " + lastName + "!</p>";
+}
