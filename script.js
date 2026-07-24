@@ -264,6 +264,11 @@ function printReceipt() {
     const first = document.getElementById("firstName").value;
     const last = document.getElementById("lastName").value;
     const money = Number(document.getElementById("moneyAmount").value);
+    if (money > 1000000000000) {
+    document.getElementById("receipt").innerHTML = "<p>Money amount too large. Maximum allowed is 1,000,000,000,000.</p>";
+    return;
+}
+
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     let total = 0;
