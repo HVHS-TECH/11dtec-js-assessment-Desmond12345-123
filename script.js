@@ -272,12 +272,19 @@ function printReceipt() {
     let printReceipt = "<h2>Receipt for {first} {last}</h2>";
 
     printReceipt += "<p>Items:</p>";
-    cart.forEach(item =>  ){
-        if item.count > 0 {
+    cart.forEach(item =>  {
+        if (item.count > 0) {
             printReceipt += "<p> {item.key}: {item.count}</p>";
             total += item.count * menuItems.find(menuItem => menuItem.key === item.key).price;
         }
-    };
+    });
     printReceipt += "<p><strong>Total items:</strong> " + total + "</p>";
     printReceipt += "<p><strong>Your money:</strong> $" + money + "</p>";
+
+    if (money >= total) {
+        printReceipt += "<p><strong>Change:</strong> $" + (money - total).toFixed(2) + "</p>";
+    } else {
+        printReceipt += "<p><strong>Insufficient funds. Please add more money.</strong></p>";
     }
+    document.getElementById("receipt").innerHTML = printReceipt;
+}
