@@ -106,13 +106,13 @@ function removeClassicGlazed() {
 }
 
 function addChocolateSprinkles() {
-    cart[1].chocolateSprinkles++;
+    cart[1].count++;
     updateCounters();
     saveCart();
 }
 
 function removeChocolateSprinkles() {
-    if (cart[1].chocolateSprinkles > 0) {
+    if (cart[1].count > 0) {
         cart[1].count--;
         updateCounters();
         saveCart();
