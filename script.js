@@ -101,27 +101,27 @@ function orderSaltedCaramel() {
 }
 
 //Order Pistachio
-function orderPistachio() {
+function addPistachio() {
     cart.push(menuItems[7]);
 }
 
 //Order Blueberry Cheesecake
-function orderBlueberryCheesecake() {
+function addBlueberryCheesecake() {
     cart.push(menuItems[8]);
 }
 
 //Order Tiramisu
-function orderTiramisu() {
+function addTiramisu() {
     cart.push(menuItems[9]);
 }
 
 //Order Choco Hazelnut
-function orderChocoHazelnut() {
+function addChocoHazelnut() {
     cart.push(menuItems[10]);
 }
 
 //Order Red Velvet
-function add() {
+function addRedVelvet() {
     cart.push(menuItems[11]);
 }
 
