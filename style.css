@@ -178,3 +178,273 @@ h1, h2, p {
   font-size: 20px;
   font-weight: bold;
 }
+
+
+
+/* Checkout Page Layout */
+.checkout-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff8f8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Checkout Title */
+.checkout-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Checkout Description */
+.checkout-container p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+/* Form Inputs */
+.checkout-container input[type="text"],
+.checkout-container input[type="number"] {
+  width: 80%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 2px solid #ffb6c1;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+/* Form Buttons */
+.checkout-container button {
+  background-color: skyblue;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+.checkout-container button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Receipt Box */
+#receipt {
+  margin-top: 30px;
+  background: #ffe4e1;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+/* Cart Page Layout */
+.cart-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff8f8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Cart Title */
+.cart-container h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* Cart Items */
+#cart-items p {
+  background: #ffe4e1;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  font-size: 18px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Checkout Button */
+.checkout-button {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: skyblue;
+  padding: 14px 22px;
+  border-radius: 10px;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.checkout-button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Responsive Checkout Container */
+.checkout-container {
+  max-width: 600px;
+  width: 90%;
+  margin: 40px auto;
+  background: #fff8f8;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+
+.checkout-container input[type="text"],
+.checkout-container input[type="number"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  margin: 10px auto;
+  border-radius: 8px;
+  border: 2px solid #ffb6c1;
+  font-size: 16px;
+  display: block;
+}
+
+
+.checkout-container button {
+  width: 100%;
+  max-width: 250px;
+  padding: 12px;
+  margin: 15px auto;
+  font-size: 18px;
+  border-radius: 8px;
+  background-color: skyblue;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+  display: block;
+}
+
+
+#receipt {
+  margin-top: 30px;
+  background: #ffe4e1;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+@media (max-width: 480px) {
+  .checkout-container {
+    padding: 20px;
+  }
+
+  .checkout-container h1 {
+    font-size: 26px;
+  }
+
+  .checkout-container p {
+    font-size: 16px;
+  }
+
+  #receipt {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .checkout-container {
+    padding: 25px;
+  }
+
+  .checkout-container h1 {
+    font-size: 30px;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .checkout-container {
+    max-width: 700px;
+  }
+}
+/* Input Section Wrapper */
+.input-section {
+  margin: 25px 0;
+  padding: 20px;
+  background: #ffeef3;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+.input-section label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Inputs */
+.input-section input[type="text"],
+.input-section input[type="number"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #ffb6c1;
+  font-size: 16px;
+  background-color: #fff;
+  margin-bottom: 12px;
+}
+
+/* Submit Buttons */
+.input-section button {
+  background-color: skyblue;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: 0.2s;
+  margin-top: 10px;
+}
+
+.input-section button:hover {
+  background-color: red;
+  color: white;
+}
+
+/* Error Messages */
+.error {
+  color: red;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+  .input-section {
+    padding: 15px;
+  }
+
+  .input-section label {
+    font-size: 16px;
+  }
+
+  .input-section input {
+    font-size: 15px;
+  }
+
+  .input-section button {
+    width: 100%;
+    max-width: 250px;
+  }
+}

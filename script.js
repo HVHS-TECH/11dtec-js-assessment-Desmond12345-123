@@ -32,16 +32,41 @@ const priceLookup = {
 
 
 // First and last name input fields1
+
 function getFirstname() {
-    const firstNameField = document.getElementById("firstName");
-    const firstName = firstNameField.value;
-    output.innerHTML += "<p>Hello, " + firstName + "!</p>"
-}       
+    const firstName = document.getElementById("firstName").value;
+    const errorBox = document.getElementById("firstNameError");
+
+    if (!validateName(firstName)) {
+        errorBox.textContent = "You can't put numbers in your name. Letters only.";
+        return;
+    }
+
+    errorBox.textContent = ""; 
+    output.innerHTML += "<p>Hello, " + firstName + "!</p>";
+}
+
 function getLastname() {
-    const lastNameField = document.getElementById("lastName");
-    const lastName = lastNameField.value;
-    output.innerHTML += "<p>Hello, " + lastName + "!</p>"
-}       
+    const lastName = document.getElementById("lastName").value;
+    const errorBox = document.getElementById("lastNameError");
+
+    if (!validateName(lastName)) {
+        errorBox.textContent = "You can't put numbers in your name. Letters only.";
+        return;
+    }
+
+    errorBox.textContent = "";
+    output.innerHTML += "<p>Hello, " + lastName + "!</p>";
+}
+
+
+
+
+function validateName(name) {
+    return /^[A-Za-z]+$/.test(name);
+}
+
+
 // Function to open the cart
 function openCart() {
     output.innerHTML += "<p>Cart opened!</p>";
@@ -264,7 +289,7 @@ function printReceipt() {
     const first = document.getElementById("firstName").value;
     const last = document.getElementById("lastName").value;
     const money = Number(document.getElementById("moneyAmount").value);
-    if (money > 1000000000000) {
+    if (money > 1000000000000 || money < 0) {
     document.getElementById("receipt").innerHTML = "<p>Money amount too large. Maximum allowed is 1,000,000,000,000.</p>";
     return;
 }
@@ -303,30 +328,3 @@ function printReceipt() {
 
 
 
-//function for validator/boundarys
-
-function validateName(name) {
-    return /^[A-Za-z]+$/.test(name);
-}
-
-function getFirstname() {
-    const firstName = document.getElementById("firstName").value;
-
-    if (!validateName(firstName)) {
-        output.innerHTML += "<p>Invalid first name. Letters only.</p>";
-        return;
-    }
-
-    output.innerHTML += "<p>Hello, " + firstName + "!</p>";
-}
-
-function getLastname() {
-    const lastName = document.getElementById("lastName").value;
-
-    if (!validateName(lastName)) {
-        output.innerHTML += "<p>Invalid last name. Letters only.</p>";
-        return;
-    }
-
-    output.innerHTML += "<p>Hello, " + lastName + "!</p>";
-}
